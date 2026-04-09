@@ -1,0 +1,8 @@
+plt.figure(figsize=(8, 5))
+sns.scatterplot(x='hp', y='qsec', hue='am_label', data=df, s=100)
+plt.title('Odnos snage (hp) i ubrzanja (qsec)')
+plt.xlabel('Snaga (hp)')
+plt.ylabel('Ubrzanje (qsec)')
+plt.legend(title='Mjenjač')
+plt.grid(True, linestyle='--', alpha=0.6)
+plt.show()
